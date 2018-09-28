@@ -19,7 +19,12 @@ function distanceFromHqInFeet(pickupLocation) {
 }
 
 function distanceTravelledInFeet(start, end) {
-  let distance = (end - start) * 264
+  let distance;
+  if (end >= start) {
+    distance = (end - start) * 264
+  } else if (start > (end - 1)) {
+    distance = (start - end) *264
+  }
   return distance;
 }
 
