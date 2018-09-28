@@ -27,4 +27,5 @@ function distanceTravelledInFeet(start, finish) {
 function calculatesFarePrice(start, finish) {
   let fare;
   let distance = distanceTravelledInFeet(start, finish);
+  return distance;
 }
