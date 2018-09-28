@@ -1,12 +1,18 @@
 // Code your solution in this file!
-function distanceFromHqInBlocks(pickup_location) {
+function distanceFromHqInBlocks(pickupLocation) {
   let distance;
-  if (pickup_location >= 42) {
-    distance = pickup_location - 42;
-  } else if (pickup_location <= 41) {
-    distance = 42 - pickup_location;
+  if (pickupLocation >= 42) {
+    distance = pickupLocation - 42;
+  } else if (pickupLocation <= 41) {
+    distance = 42 - pickupLocation;
   } else {
     return 'Please enter a number!'
   }
+  return distance;
+}
+
+function distanceFromHqInFeet(pickupLocation) {
+  let distance;
+  let distance_in_blocks = distanceFromHqInBlocks(pickupLocation)
   return distance;
 }
