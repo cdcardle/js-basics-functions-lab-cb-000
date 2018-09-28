@@ -20,15 +20,12 @@ function distanceFromHqInFeet(pickupLocation) {
 
 function distanceTravelledInFeet(start, finish) {
   let distance;
-  if (finish >= start) {
-    distance = (finish - start) * 264
-  } else if (start > (finish - 1)) {
-    distance = (start - finish) *264
-  }
+  (finish >= start) ? distance = (finish - start) * 264 : distance = (start - finish) * 264
   return distance;
 }
 
 function calculatesFarePrice(start, finish) {
   let fare;
-  switch (fare)
+  let distance;
+  (finish >= start) ? distance = (finish - start) : distance = (start - finish)
 }
