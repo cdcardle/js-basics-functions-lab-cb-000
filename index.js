@@ -13,6 +13,6 @@ function distanceFromHqInBlocks(pickupLocation) {
 
 function distanceFromHqInFeet(pickupLocation) {
   let distance;
-  let distance_in_blocks = distanceFromHqInBlocks(pickupLocation)
+  let distanceInBlocks = distanceFromHqInBlocks(pickupLocation)
   return distance;
 }
