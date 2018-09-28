@@ -22,3 +22,7 @@ function distanceTravelledInFeet(start, end) {
   let distance = (end - start) * 264
   return distance;
 }
+
+function calculatesFarePrice() {
+
+}
