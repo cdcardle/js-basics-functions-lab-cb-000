@@ -18,17 +18,17 @@ function distanceFromHqInFeet(pickupLocation) {
   return distance;
 }
 
-function distanceTravelledInFeet(start, finish) {
+function distanceTravelledInFeet(start, destination) {
   let distance;
-  if (finish >= start) {
-    distance = (finish - start) * 264
-  } else if (start > (finish - 1)) {
-    distance = (start - finish) *264
+  if (destination >= start) {
+    distance = (destination - start) * 264
+  } else if (start > (destination - 1)) {
+    distance = (start - destination) *264
   }
   return distance;
 }
 
-function calculatesFarePrice(distance) {
+function calculatesFarePrice(start, destination) {
   let fare;
   switch (fare)
 }
